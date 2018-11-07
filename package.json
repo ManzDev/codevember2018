@@ -1,0 +1,46 @@
+{
+  "name": "codevember2018",
+  "version": "1.0.0",
+  "description": "30 days, 30 creative experiments. Created by Manz.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sh ./.bin/dev.sh ",
+    "build": "sh ./.bin/build.sh ",
+    "deploy": "git subtree push --prefix build origin gh-pages"
+  },
+  "keywords": [
+    "parcel",
+    "template",
+    "html5",
+    "pug",
+    "css3",
+    "postcss",
+    "stylelint",
+    "typescript",
+    "tslint",
+    "javascript",
+    "eslint"
+  ],
+  "author": "Manz",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "eslint": "^5.6.1",
+    "npm-run-all": "^4.1.3",
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "postcss-clean": "^1.1.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-mixins": "^6.2.0",
+    "postcss-preset-env": "^6.0.7",
+    "postcss-sorting": "^4.0.0",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "howler": "^2.0.15"
+  }
+}

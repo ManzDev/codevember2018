@@ -1,57 +1,22 @@
-A prepared package for new HTML/CSS/JS projects and easy coding using Parcel bundler.
+![Codevember 2018](codevember-logo.gif)
 
-## Features
+30 days, 30 creative experiments. [Codevember](http://codevember.xyz/) is a challenge for developers creating a creative sketch by day during the whole month of November.
 
-- Automatic bundler with Parcel [ ParcelJS: https://parceljs.org/ ]
-- NPM Scripts: Tasks for fast development & generation
-- For HTML binding use `export func` on functions and use `global.func()`.
+Here, my 30 creative experiments:
 
-### HTML
+| Day | Theme | Links | Used technologies* | Music by | Flags |
+|-----|-------|--------------|-------------|-------------------|----------|
+| [**Day 1**](#) | ♾️ Infinity | [Pen](https://codepen.io/manz/pen/oQbWWj) / [GitHub](https://manzdev.github.io/codevember2018/day-1/) | SVG, Howler, Animation | 🎵 [Guru Josh](https://en.wikipedia.org/wiki/Infinity_(Guru_Josh_song)) | |
 
-- Allow write Pug template code (HTML preprocessor) [ Pug: https://pugjs.org/ ]
+<small>* HTML5 and CSS3 always used</small>
 
-### CSS
+Legend:
+* ⭐ Picked (Homepage) on CodePen
+* 🕹 Demo User-interactive
 
-- Allow write PostCSS code (pre, post and transform CSS with JS) [ PostCSS: https://postcss.org/ ]
-  - Convert modern CSS into browsers can understand [ postcss-preset-env: https://preset-env.cssdb.org/features ]
-  - Auto add CSS prefix properties [Autoprefixer: https://autoprefixer.github.io/ ]
-  - Improve import PostCSS files (partials and globs) [ postcss-easy-import: https://github.com/TrySound/postcss-easy-import ]
-  - Support for CSS mixins (functions-in-css) [ postcss-mixins: https://github.com/postcss/postcss-mixins ]
-  - Auto import Google Fonts [ PostCSS-font-magician: https://github.com/jonathantneal/postcss-font-magician ]
-  - Auto minify & optimize CSS code with clean-css [ CleanCSS: https://github.com/jakubpawlowicz/clean-css ]
-- Review CSS code for improve quality, tips and avoid errors [ StyleLint: https://stylelint.io/ ]
+# Author
 
-### JS
-
-- Allow write ES201x (ES8/ES7/ES6) Javascript with Babel (JS transpiler to ES5) [ Babel: https://babeljs.io/ ]
-- Review Javascript code for improve quality, tips and avoid errors [ ESLint: https://eslint.org/ ]
-
-### Other branches
-
-#### Typescript (ts branch)
-
-- Allow write Typescript code (Superset of Javascript) [ Typescript: https://www.typescriptlang.org/ ]
-- Review Typescript code for improve quality, tips and avoid errors [ TSLint: https://palantir.github.io/tslint/ ]
-
-#### Simple HTML (nopug branch)
-
-- Allow write pure HTML instead Pug files.
-
-## Scripts
-
-| NPM Command | Description |
-|---------|-------------|
-| `npm run dev` | Local webserver for development (serve + watch) |
-| `npm run watch` | Watch changes (dev for use with external server: apache, nginx, local server...) |
-| `npm run build` | Automatic production build (for upload). Includes size detailed report ([parcel-plugin-bundle-visualiser](https://github.com/gregtillbrook/parcel-plugin-bundle-visualiser)) <sup>*</sup> |
-| `npm run clean:cache` | Remove `.cache`, `dist` and `build` folder. |
-| `npm run clean:all` | Reset default repo and remove cache and all npm generated files. |
-| `npm run deploy` | Optional deploy `build` folder (master branch) to `gh-pages` branch for [GitHub Pages](https://pages.github.com/). |
-
-<sup>*</sup> Change `--public-url /` for your project URL path. For example, on repo user.github.io/repo-name/sample-web/ use `--public-url /repo-name/sample-web/`.
-
-## Requisites
-
-- Git https://git-scm.com/
-- NodeJS/NPM https://nodejs.org/en/
-- ParcelJS https://parceljs.org/
+- [Emezeta.com](https://www.emezeta.com/)
+- [Twitter: @Manz](https://twitter.com/Manz)
+- [GitHub: ManzDev](https://github.com/ManzDev)
+- [Codepen: Manz](https://codepen.io/Manz)

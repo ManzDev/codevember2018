@@ -1,0 +1,132 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  background: #777;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+
+  & h1,
+  & h2 {
+    margin: 0;
+  }
+
+  & h2 {
+    font-size: 28px;
+    color: #ccc;
+  }
+
+  & a {
+    display: inline-block;
+    border: 0;
+    font-size: 18px;
+    padding: 6px 12px;
+    color: #aaa;
+    background: #222;
+    margin-top: 12px;
+    text-decoration: none;
+
+    & i {
+      padding-right: 4px;
+    }
+
+    &:hover {
+      background: #aaa;
+      color: #222;
+    }
+  }
+}
+
+button {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  border-radius: 8px;
+  background: #bbb;
+  outline: 0;
+  padding: 5px 15px;
+}
+
+.score,
+.time {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 42px;
+  color: #fff;
+  text-align: center;
+}
+
+.time {
+  transform: translateY(60px);
+}
+
+.score {
+  font-size: 32px;
+  transform: translateY(80px);
+  max-width: 65%;
+  margin: auto;
+
+  & b.not {
+    filter: grayscale(1);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &.animation b {
+    display: inline-block;
+    animation: dance 1s alternate infinite;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+.rabbit {
+  --rabbit-y: 60px;
+  display: block;
+  width: 125px;
+  position: relative;
+  left: 15px;
+  z-index: 1;
+  transform: translateY(var(--rabbit-y));
+  transition: transform 0.2s;
+  user-select: none;
+
+  &.off { --rabbit-y: 220px; }
+
+  &:hover {
+    filter: drop-shadow(0 0 5px yellow);
+  }
+}
+
+.block {
+  --hole-size: 150px;
+  position: absolute;
+  bottom: 50px;
+  width: var(--hole-size);
+  height: 250px;
+  overflow: hidden;
+
+  & .hole {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: #888;
+    border-radius: 70%;
+    box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.5) inset;
+    position: absolute;
+    bottom: -40px;
+    z-index: 3;
+  }
+
+  &:nth-child(1) { left: calc(25% - var(--hole-size) / 2); }
+  &:nth-child(2) { left: calc(50% - var(--hole-size) / 2); }
+  &:nth-child(3) { left: calc(75% - var(--hole-size) / 2); }
+}
+
+@keyframes dance {
+  0% { transform: rotate(0); }
+
+  100% { transform: rotate(90deg); }
+}

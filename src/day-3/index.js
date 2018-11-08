@@ -36,7 +36,7 @@ const Game = class {
       const i = ~~(Math.random() * 3);
       const r = ~~(Math.random() * 2);
 
-      if (r == 1)
+      if ((r == 1) && ( rabbit[i].classList.contains('off')))
         this.showRabbit(rabbit[i]);
 
     }, 200);
@@ -79,7 +79,6 @@ const Game = class {
   end() {
     rabbit.forEach(r => r.classList.add('off'));
     score.classList.add('animation');
-    score.innerHTML += '<br>';
     for (let i = 0; i < (this.max - this.count); i++)
       score.innerHTML += '<b class="not">🥕</b>';
     clearInterval(this.timer);

@@ -1,0 +1,110 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(170deg, #035cbc 25%, #233c9c 50%, #73239c 75%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  position: relative;
+  z-index: 1;
+
+  & h1,
+  & h2 {
+    margin: 0;
+  }
+
+  & h2 {
+    font-size: 28px;
+    color: #ccc;
+  }
+
+  & a {
+    display: inline-block;
+    border: 0;
+    font-size: 18px;
+    padding: 6px 12px;
+    color: #aaa;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 12px;
+    text-decoration: none;
+
+    & i {
+      padding-right: 4px;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.75);
+      color: #222;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+
+  &.animation .moon {
+    animation:
+      movemoon 25s ease 1,
+      floating 2s alternate infinite 25s;
+  }
+}
+
+.go {
+  position: absolute;
+  top: 30%;
+  color: #eee;
+  font-family: Montserrat, sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.moon {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  background: #eee;
+  position: absolute;
+  bottom: -50vw;
+  box-shadow:
+    0 0 5px #fff,
+    -45px -45px 25px rgba(0, 0, 0, 0.05) inset;
+  will-change: transform;
+}
+
+.boo {
+  display: flex;
+  width: 50%;
+  transform: translate(50%, 0);
+  transition: opacity 1s;
+}
+
+.off {
+  opacity: 0;
+}
+
+.cityscape {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+}
+
+@keyframes movemoon {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(0, -75vw); }
+}
+
+@keyframes floating {
+  0% { transform: translate(0, -75vw); }
+  100% { transform: translate(0, -72vw); }
+}

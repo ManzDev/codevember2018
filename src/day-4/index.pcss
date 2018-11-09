@@ -78,7 +78,7 @@
   box-shadow:
     0 0 5px #fff,
     -45px -45px 25px rgba(0, 0, 0, 0.05) inset;
-  will-change: transform;
+  will-change: transform, box-shadow;
 }
 
 .boo {
@@ -97,6 +97,21 @@
   bottom: -30px;
   left: 0;
   width: 100%;
+}
+
+@media screen and (min-aspect-ratio: 9/8) {
+  .content {
+    display: none;
+  }
+
+  body::after {
+    margin-top: 3em;
+    content: "Please, resize browser to square aspect ratio";
+    font-size: 26px;
+    display: block;
+    color: #eee;
+    text-align: center;
+  }
 }
 
 @keyframes movemoon {
